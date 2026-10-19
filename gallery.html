@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual Gallery and Design Artifacts of Syed Muhammad Sarim - UI Wireframes, Responsive Breakpoint Audits, and Design Systems.">
+  <meta name="author" content="Syed Muhammad Sarim">
+  <title>Design &amp; Project Gallery | Syed Muhammad Sarim - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Syed Muhammad Sarim Home">
+        <div class="brand-icon" aria-hidden="true">S</div>
+        <div class="brand-title">
+          <span class="brand-name">Syed Sarim</span>
+          <span class="brand-sub">Frontend Developer &amp; Student</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- 10 Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Visual Gallery</span>
+      </nav>
+      <h1>Visual Design &amp; Project Gallery</h1>
+      <p>A curated exhibition of interface mockups, CSS architectural blueprints, responsive testing, and lab demonstrations.</p>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="gallery">
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-cyan">Visual Artifacts</span>
+          <h2>Explore Project Snapshots</h2>
+          <p>Click on any gallery card to launch the pure CSS modal lightbox for high-resolution inspection and project notes.</p>
+        </header>
+
+        <!-- RESPONSIVE GALLERY GRID -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <a href="#preview-1" class="gallery-item" aria-label="Open Mobile UI Wireframe Prototype Lightbox">
+            <img src="images/gallery-1.svg" alt="Mobile UI Wireframe Prototype illustration" width="500" height="360">
+            <div class="gallery-overlay">
+              <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Wireframes</span>
+              <h3 class="gallery-overlay-title">Mobile UI Wireframe Prototype</h3>
+              <p class="gallery-overlay-sub">Structural grid planning for mobile viewports &bull; Click to Inspect</p>
+            </div>
+          </a>
+
+          <!-- Item 2 -->
+          <a href="#preview-2" class="gallery-item" aria-label="Open CSS Architecture & Variables Lightbox">
+            <img src="images/gallery-2.svg" alt="CSS Architecture & Variables design tokens illustration" width="500" height="360">
+            <div class="gallery-overlay">
+              <span class="badge badge-teal" style="align-self: flex-start; margin-bottom: 0.5rem;">CSS Architecture</span>
+              <h3 class="gallery-overlay-title">CSS Design Tokens &amp; Variables</h3>
+              <p class="gallery-overlay-sub">Centralized color and elevation variables &bull; Click to Inspect</p>
+            </div>
+          </a>
+
+          <!-- Item 3 -->
+          <a href="#preview-3" class="gallery-item" aria-label="Open Developer Workstation Setup Lightbox">
+            <img src="images/gallery-3.svg" alt="Student Developer Workstation Setup illustration" width="500" height="360">
+            <div class="gallery-overlay">
+              <span class="badge badge-amber" style="align-self: flex-start; margin-bottom: 0.5rem;">Workstation</span>
+              <h3 class="gallery-overlay-title">Developer Coding Environment</h3>
+              <p class="gallery-overlay-sub">Dual-screen editor and responsive live reload &bull; Click to Inspect</p>
+            </div>
+          </a>
+
+          <!-- Item 4 -->
+          <a href="#preview-4" class="gallery-item" aria-label="Open Responsive Multi-Device Testing Lightbox">
+            <img src="images/gallery-4.svg" alt="Responsive Multi-Device Testing illustration" width="500" height="360">
+            <div class="gallery-overlay">
+              <span class="badge" style="align-self: flex-start; margin-bottom: 0.5rem;">Testing</span>
+              <h3 class="gallery-overlay-title">Multi-Device Breakpoint Audits</h3>
+              <p class="gallery-overlay-sub">Desktop, iPad, and iPhone screen testing &bull; Click to Inspect</p>
+            </div>
+          </a>
+
+          <!-- Item 5 -->
+          <a href="#preview-5" class="gallery-item" aria-label="Open Color Palette & Typography Lightbox">
+            <img src="images/gallery-5.svg" alt="Color Palette and Typography System illustration" width="500" height="360">
+            <div class="gallery-overlay">
+              <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Design System</span>
+              <h3 class="gallery-overlay-title">Palette &amp; Typography Rules</h3>
+              <p class="gallery-overlay-sub">High-contrast accessibility harmony &bull; Click to Inspect</p>
+            </div>
+          </a>
+
+          <!-- Item 6 -->
+          <a href="#preview-6" class="gallery-item" aria-label="Open Web Engineering Demo Day Lightbox">
+            <img src="images/gallery-6.svg" alt="University Web Engineering Demo Day illustration" width="500" height="360">
+            <div class="gallery-overlay">
+              <span class="badge badge-teal" style="align-self: flex-start; margin-bottom: 0.5rem;">Campus Demo</span>
+              <h3 class="gallery-overlay-title">Web Engineering Presentation</h3>
+              <p class="gallery-overlay-sub">University lab demonstration showcase &bull; Click to Inspect</p>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="blog.html" class="btn btn-primary">Read Web Engineering Blog &rarr;</a>
+          <a href="projects.html" class="btn btn-outline" style="margin-left: 0.75rem;">View Full Projects List</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PURE CSS MODAL LIGHTBOXES (:target) ================= -->
+    <!-- Lightbox 1 -->
+    <aside id="preview-1" class="lightbox-modal" aria-labelledby="modal-title-1">
+      <div class="lightbox-content">
+        <a href="#gallery" class="lightbox-close" aria-label="Close Preview">&times;</a>
+        <img src="images/gallery-1.svg" alt="Enlarged Mobile UI Wireframe Prototype illustration" width="800" height="450">
+        <div class="lightbox-info">
+          <span class="badge badge-cyan">UX Wireframing</span>
+          <h3 id="modal-title-1">Mobile UI Wireframe Prototype</h3>
+          <p>
+            Before writing HTML markup, each layout begins with precise wireframing to determine content hierarchy, thumb-reach zones on mobile devices, and clear semantic landmarks. This ensures that navigation remains accessible even on narrow smartphone displays.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="#gallery" class="btn btn-secondary btn-sm">Close Preview</a>
+            <a href="projects.html" class="btn btn-outline btn-sm" style="margin-left: 0.5rem;">View Project</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Lightbox 2 -->
+    <aside id="preview-2" class="lightbox-modal" aria-labelledby="modal-title-2">
+      <div class="lightbox-content">
+        <a href="#gallery" class="lightbox-close" aria-label="Close Preview">&times;</a>
+        <img src="images/gallery-2.svg" alt="Enlarged CSS Architecture & Variables illustration" width="800" height="450">
+        <div class="lightbox-info">
+          <span class="badge badge-teal">Design System</span>
+          <h3 id="modal-title-2">CSS Architecture &amp; Custom Properties</h3>
+          <p>
+            A scalable CSS architecture relies on centralized <code>:root</code> tokens. By defining colors, elevations, border radii, and transitions in one place, maintaining and theming the 10-page portfolio becomes predictable and organized without repetitive code.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="#gallery" class="btn btn-secondary btn-sm">Close Preview</a>
+            <a href="blog.html#post-2" class="btn btn-outline btn-sm" style="margin-left: 0.5rem;">Read Blog Guide</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Lightbox 3 -->
+    <aside id="preview-3" class="lightbox-modal" aria-labelledby="modal-title-3">
+      <div class="lightbox-content">
+        <a href="#gallery" class="lightbox-close" aria-label="Close Preview">&times;</a>
+        <img src="images/gallery-3.svg" alt="Enlarged Developer Coding Environment illustration" width="800" height="450">
+        <div class="lightbox-info">
+          <span class="badge badge-amber">Developer Workspace</span>
+          <h3 id="modal-title-3">Student Development Workstation</h3>
+          <p>
+            A snapshot of my dual-monitor setup: one screen dedicated to clean VS Code markup and CSS stylesheets, and the secondary screen running Chrome and Firefox DevTools to monitor DOM trees, computed styles, and accessibility contrast checkers in real time.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="#gallery" class="btn btn-secondary btn-sm">Close Preview</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Lightbox 4 -->
+    <aside id="preview-4" class="lightbox-modal" aria-labelledby="modal-title-4">
+      <div class="lightbox-content">
+        <a href="#gallery" class="lightbox-close" aria-label="Close Preview">&times;</a>
+        <img src="images/gallery-4.svg" alt="Enlarged Responsive Multi-Device Testing illustration" width="800" height="450">
+        <div class="lightbox-info">
+          <span class="badge">Responsive Audits</span>
+          <h3 id="modal-title-4">Multi-Device Breakpoint Audits</h3>
+          <p>
+            Every page in this assignment has been rigorously audited across major device widths: 375px (iPhone), 768px (iPad portrait), 1024px (tablet landscape), and 1440px (widescreen). Grids collapse smoothly and typography scales proportionally.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="#gallery" class="btn btn-secondary btn-sm">Close Preview</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Lightbox 5 -->
+    <aside id="preview-5" class="lightbox-modal" aria-labelledby="modal-title-5">
+      <div class="lightbox-content">
+        <a href="#gallery" class="lightbox-close" aria-label="Close Preview">&times;</a>
+        <img src="images/gallery-5.svg" alt="Enlarged Color Palette and Typography System illustration" width="800" height="450">
+        <div class="lightbox-info">
+          <span class="badge badge-cyan">Accessibility (a11y)</span>
+          <h3 id="modal-title-5">Color Harmony &amp; Typography System</h3>
+          <p>
+            The navy blue (<code>#0f172a</code>), purple (<code>#6366f1</code>), and cyan (<code>#0ea5e9</code>) color system was selected to ensure all body copy and interactive links exceed the 4.5:1 minimum contrast requirement set by the WCAG 2.1 AA guidelines.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="#gallery" class="btn btn-secondary btn-sm">Close Preview</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Lightbox 6 -->
+    <aside id="preview-6" class="lightbox-modal" aria-labelledby="modal-title-6">
+      <div class="lightbox-content">
+        <a href="#gallery" class="lightbox-close" aria-label="Close Preview">&times;</a>
+        <img src="images/gallery-6.svg" alt="Enlarged Web Engineering Presentation illustration" width="800" height="450">
+        <div class="lightbox-info">
+          <span class="badge badge-teal">Academic Demo</span>
+          <h3 id="modal-title-6">University Web Engineering Demo Day</h3>
+          <p>
+            Presented responsive web engineering projects to university faculty and student peers. Demonstrated how pure CSS techniques can replace complex JavaScript libraries without losing interactivity or user engagement.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="#gallery" class="btn btn-secondary btn-sm">Close Preview</a>
+            <a href="contact.html" class="btn btn-outline btn-sm" style="margin-left: 0.5rem;">Connect with Me</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon" aria-hidden="true">S</div>
+            <span class="brand-name">Syed Sarim</span>
+          </div>
+          <p>
+            Undergraduate Computer Science student dedicated to mastering front-end web engineering, accessibility, and modern responsive UI design.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/syedsarim" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">&#128187;</a>
+            <a href="https://linkedin.com/in/syedsarim" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">&#128108;</a>
+            <a href="mailto:syedsarimraza1@gmail.com" class="social-link" aria-label="Send Email">&#9993;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Main Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills &amp; Toolkit</a></li>
+            <li><a href="education.html">Education Timeline</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore More</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="blog.html">Developer Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Assignment Info</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.5rem;">
+            <strong>Course:</strong> Web Engineering (CS-312)<br>
+            <strong>Assignment:</strong> Assignment 1 - Multi-Page Portfolio<br>
+            <strong>Tech Stack:</strong> Pure HTML5 &amp; CSS3 Only<br>
+            <strong>Frameworks/JS:</strong> None (100% Native)
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">Contact Student</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Syed Muhammad Sarim. All rights reserved. Created for Web Engineering Assignment 1.
+        </div>
+        <div>
+          <a href="about.html">About</a> &bull;
+          <a href="faq.html">FAQ</a> &bull;
+          <a href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio Website of Syed Muhammad Sarim - Aspiring Frontend Developer and Computer Science Undergraduate. Built with pure HTML5 and CSS3.">
+  <meta name="author" content="Syed Muhammad Sarim">
+  <title>Syed Muhammad Sarim | Personal Portfolio - Web Engineering Assignment 1</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Syed Muhammad Sarim Home">
+        <div class="brand-icon" aria-hidden="true">S</div>
+        <div class="brand-title">
+          <span class="brand-name">Syed Sarim</span>
+          <span class="brand-sub">Frontend Developer &amp; Student</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- 10 Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="hero-badge-pulse" aria-hidden="true"></span>
+              <span>Available for Web Projects &amp; Internships</span>
+            </div>
+            <h1 id="hero-heading" class="hero-title">
+              Crafting Clean, Responsive Web Experiences with <span class="text-gradient">Pure HTML &amp; CSS</span>
+            </h1>
+            <p class="hero-description">
+              Hello! I am <strong>Syed Muhammad Sarim</strong>, a Computer Science student passionate about front-end engineering, accessible design systems, and semantic web standards. Welcome to my university portfolio created for <em>Web Engineering Assignment 1</em>.
+            </p>
+            <div class="hero-buttons">
+              <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+              <a href="about.html" class="btn btn-outline">About My Journey</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Portfolio Pages</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Academic Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Pure HTML5 &amp; CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-image-card">
+              <img src="images/avatar.svg" alt="Illustrated profile portrait of Syed Muhammad Sarim with coding graphics" width="400" height="400">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHTS / EXPLORE PORTFOLIO -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-cyan">Navigation Guide</span>
+          <h2>Explore My Portfolio</h2>
+          <p>Discover my academic background, technical skills, web services, design gallery, and technical writing across 10 dedicated pages.</p>
+        </header>
+
+        <div class="grid grid-4">
+          <!-- Card 1: About Me -->
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128100;</div>
+            <h3>About My Story</h3>
+            <p>Learn about my background, core values, coding philosophy, and my long-term aspirations in software engineering.</p>
+            <a href="about.html" class="feature-link">Read Biography &rarr;</a>
+          </article>
+
+          <!-- Card 2: Technical Skills -->
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">&#9881;</div>
+            <h3>Skills &amp; Toolkit</h3>
+            <p>Interactive CSS skill meters covering semantic HTML5, CSS3 Grid/Flexbox, responsive design, and version control.</p>
+            <a href="skills.html" class="feature-link">View Skill Bars &rarr;</a>
+          </article>
+
+          <!-- Card 3: Academic Timeline -->
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">&#127891;</div>
+            <h3>Education Timeline</h3>
+            <p>Academic milestones, university coursework in Computer Science, academic honors, and student leadership roles.</p>
+            <a href="education.html" class="feature-link">View Academic Record &rarr;</a>
+          </article>
+
+          <!-- Card 4: Projects Showcase -->
+          <article class="card feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128187;</div>
+            <h3>Featured Projects</h3>
+            <p>A curated showcase of academic coursework systems, environmental dashboards, and algorithmic explorers.</p>
+            <a href="projects.html" class="feature-link">Browse Projects &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK PREVIEW SECTION -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-teal">Selected Showcase</span>
+          <h2>Featured Academic Work</h2>
+          <p>Here is a preview of the projects I designed to solve real student and campus problems.</p>
+        </header>
+
+        <div class="grid grid-2">
+          <!-- Featured Project 1 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-1.svg" alt="EcoTrack Environmental Dashboard preview interface" width="600" height="380">
+              <span class="badge badge-teal project-status">Featured</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS Grid</span>
+                <span class="badge">Data Visualization</span>
+              </div>
+              <h3 class="project-title">EcoTrack Environmental Dashboard</h3>
+              <p class="project-desc">
+                A responsive analytics portal designed to track campus carbon footprints, energy conservation metrics, and student recycling drives with pure CSS gauges and responsive cards.
+              </p>
+              <ul class="project-features">
+                <li>Modular CSS card architecture with CSS custom properties</li>
+                <li>Accessible high-contrast color scheme adhering to WCAG 2.1 AA</li>
+                <li>Fully responsive across mobile, tablet, and widescreen layouts</li>
+              </ul>
+              <div class="project-actions">
+                <a href="projects.html#ecotrack" class="btn btn-primary btn-sm">Full Project Details</a>
+                <a href="gallery.html" class="btn btn-outline btn-sm">View in Gallery</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 2 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-2.svg" alt="Campus Event Hub Portal preview interface" width="600" height="380">
+              <span class="badge badge-cyan project-status">Campus Life</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">Flexbox</span>
+                <span class="badge">Semantic HTML</span>
+                <span class="badge">Web Engineering</span>
+              </div>
+              <h3 class="project-title">Campus Hub Student Portal</h3>
+              <p class="project-desc">
+                An interactive directory connecting university student societies, engineering workshops, seminar schedules, and peer-mentoring booking systems.
+              </p>
+              <ul class="project-features">
+                <li>Categorized event calendars using semantic time and article tags</li>
+                <li>CSS-only tabbed navigation structure for fast orientation</li>
+                <li>Optimized asset loading with lightweight vector graphics</li>
+              </ul>
+              <div class="project-actions">
+                <a href="projects.html#campushub" class="btn btn-primary btn-sm">Full Project Details</a>
+                <a href="gallery.html" class="btn btn-outline btn-sm">View in Gallery</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="projects.html" class="btn btn-primary">View All 6 Projects &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES & COLLABORATION CALLOUT -->
+    <section class="section">
+      <div class="container">
+        <div class="card" style="background: linear-gradient(135deg, var(--color-primary), #1e1b4b); color: var(--text-white); padding: 3rem 2.5rem;">
+          <div class="grid grid-2" style="align-items: center;">
+            <div>
+              <span class="badge badge-amber" style="margin-bottom: 1rem;">Services &amp; Offerings</span>
+              <h2 style="color: var(--text-white); font-size: 2.2rem; margin-bottom: 1rem;">Looking for Clean, Standards-Compliant Web Layouts?</h2>
+              <p style="color: #cbd5e1; font-size: 1.05rem; margin-bottom: 1.5rem;">
+                I provide semantic HTML5 authoring, responsive CSS3 layout building, and legacy markup refactoring. Explore my full services breakdown or reach out to discuss academic collaborations.
+              </p>
+              <div class="hero-buttons" style="margin-bottom: 0;">
+                <a href="services.html" class="btn btn-primary">Check Web Services</a>
+                <a href="contact.html" class="btn btn-outline" style="color: #fff; border-color: #818cf8;">Send Message</a>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <div class="grid grid-2 gap-2" style="text-align: left;">
+                <div style="background: rgba(255,255,255,0.08); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.15);">
+                  <strong style="color: #38bdf8; display: block; font-size: 1.1rem; margin-bottom: 0.35rem;">&#10003; Responsive UI</strong>
+                  <span style="font-size: 0.85rem; color: #94a3b8;">Fluid layouts adapting seamlessly to phones, tablets, and desktops.</span>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.15);">
+                  <strong style="color: #34d399; display: block; font-size: 1.1rem; margin-bottom: 0.35rem;">&#10003; Zero Bloat</strong>
+                  <span style="font-size: 0.85rem; color: #94a3b8;">Clean code written by hand without heavy third-party framework overhead.</span>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.15);">
+                  <strong style="color: #a78bfa; display: block; font-size: 1.1rem; margin-bottom: 0.35rem;">&#10003; Semantic HTML</strong>
+                  <span style="font-size: 0.85rem; color: #94a3b8;">Organized hierarchy boosting accessibility and SEO readability.</span>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.15);">
+                  <strong style="color: #f43f5e; display: block; font-size: 1.1rem; margin-bottom: 0.35rem;">&#10003; Fast Loading</strong>
+                  <span style="font-size: 0.85rem; color: #94a3b8;">High performance with optimized SVG assets and efficient CSS rules.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT ARTICLES & LEARNING INSIGHTS -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-cyan">From the Notebook</span>
+          <h2>Latest Blog Articles</h2>
+          <p>Read my reflections on learning web engineering, mastering CSS layout algorithms, and building accessible digital products.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <!-- Article 1 -->
+          <article class="card">
+            <span class="badge" style="margin-bottom: 0.75rem;">HTML Architecture</span>
+            <h4><a href="blog.html#post-1">The Power of Semantic HTML5 in Modern Web Development</a></h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Why moving beyond generic container elements creates accessible, SEO-friendly, and maintainable software architectures.
+            </p>
+            <a href="blog.html#post-1" class="feature-link">Read Full Article &rarr;</a>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="card">
+            <span class="badge badge-teal" style="margin-bottom: 0.75rem;">CSS Layouts</span>
+            <h4><a href="blog.html#post-2">Mastering CSS Grid and Flexbox: A Practical Guide</a></h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Understanding the conceptual divergence between 1-dimensional Flexbox flows and 2-dimensional Grid matrixes.
+            </p>
+            <a href="blog.html#post-2" class="feature-link">Read Full Article &rarr;</a>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="card">
+            <span class="badge badge-amber" style="margin-bottom: 0.75rem;">Engineering Practices</span>
+            <h4><a href="blog.html#post-3">Building High-Performance Websites Without JavaScript</a></h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+              How CSS-only modals, hamburger toggles, and detail accordions deliver lightning performance and resilient UX.
+            </p>
+            <a href="blog.html#post-3" class="feature-link">Read Full Article &rarr;</a>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="blog.html" class="btn btn-secondary">Visit Developer Blog &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Bio -->
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon" aria-hidden="true">S</div>
+            <span class="brand-name">Syed Sarim</span>
+          </div>
+          <p>
+            Undergraduate Computer Science student dedicated to mastering front-end web engineering, accessibility, and modern responsive UI design.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/syedsarim" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">&#128187;</a>
+            <a href="https://linkedin.com/in/syedsarim" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">&#128108;</a>
+            <a href="mailto:syedsarimraza1@gmail.com" class="social-link" aria-label="Send Email">&#9993;</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-title">Main Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills &amp; Toolkit</a></li>
+            <li><a href="education.html">Education Timeline</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: More Pages -->
+        <div>
+          <h4 class="footer-title">Explore More</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="blog.html">Developer Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Assignment Details -->
+        <div>
+          <h4 class="footer-title">Assignment Info</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.5rem;">
+            <strong>Course:</strong> Web Engineering (CS-312)<br>
+            <strong>Assignment:</strong> Assignment 1 - Multi-Page Portfolio<br>
+            <strong>Tech Stack:</strong> Pure HTML5 &amp; CSS3 Only<br>
+            <strong>Frameworks/JS:</strong> None (100% Native)
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">Contact Student</a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Syed Muhammad Sarim. All rights reserved. Created for Web Engineering Assignment 1.
+        </div>
+        <div>
+          <a href="about.html">About</a> &bull;
+          <a href="faq.html">FAQ</a> &bull;
+          <a href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

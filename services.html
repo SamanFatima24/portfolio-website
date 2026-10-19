@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Front-end web development, responsive CSS3 layout creation, HTML5 semantic authoring, and accessibility auditing services by Syed Muhammad Sarim.">
+  <meta name="author" content="Syed Muhammad Sarim">
+  <title>Web Development Services | Syed Muhammad Sarim - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Syed Muhammad Sarim Home">
+        <div class="brand-icon" aria-hidden="true">S</div>
+        <div class="brand-title">
+          <span class="brand-name">Syed Sarim</span>
+          <span class="brand-sub">Frontend Developer &amp; Student</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- 10 Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Services</span>
+      </nav>
+      <h1>Web Development &amp; Design Services</h1>
+      <p>Clean, standards-compliant frontend solutions engineered for reliability, responsiveness, and performance.</p>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <!-- SERVICES GRID SECTION -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-cyan">What I Deliver</span>
+          <h2>Frontend Engineering Offerings</h2>
+          <p>Whether you require a complete multi-page university website, responsive layout conversion, or accessibility review, here is how I can assist.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <!-- Service 1: HTML5 Semantic Authoring -->
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true">&#127959;</div>
+            <h3>Semantic HTML5 Architecture</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Translating design concepts and mockups into clean, logical, and meaningful HTML5 document hierarchies.
+            </p>
+            <ul class="service-checklist">
+              <li><span class="service-check">&#10003;</span> Structural elements (header, nav, main, article)</li>
+              <li><span class="service-check">&#10003;</span> Accessible forms with labels and fieldsets</li>
+              <li><span class="service-check">&#10003;</span> Optimized SEO metadata and open graph tags</li>
+              <li><span class="service-check">&#10003;</span> 100% W3C HTML5 validator compliance</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-sm">Request Markup</a>
+          </article>
+
+          <!-- Service 2: Responsive CSS3 Layouts -->
+          <article class="card service-card service-card-popular">
+            <span class="badge badge-teal service-badge">Most Popular</span>
+            <div class="service-icon" style="background: linear-gradient(135deg, #d1fae5, #a7f3d0); color: #047857;" aria-hidden="true">&#128241;</div>
+            <h3>Responsive CSS3 Layouts</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Developing modern, fluid multi-device layouts utilizing CSS Grid, Flexbox, and mobile-first media queries.
+            </p>
+            <ul class="service-checklist">
+              <li><span class="service-check">&#10003;</span> Seamless desktop, tablet, and smartphone styling</li>
+              <li><span class="service-check">&#10003;</span> Pure CSS mobile hamburger dropdown toggles</li>
+              <li><span class="service-check">&#10003;</span> Modular CSS custom property design tokens</li>
+              <li><span class="service-check">&#10003;</span> Zero dependency on external CSS frameworks</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-sm">Build Layout</a>
+          </article>
+
+          <!-- Service 3: Legacy Website Modernization -->
+          <article class="card service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #fef3c7, #fde68a); color: #b45309;" aria-hidden="true">&#9855;</div>
+            <h3>Website Modernization</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Refactoring outdated table-based or bloated legacy layouts into lean, modern, and maintainable CSS.
+            </p>
+            <ul class="service-checklist">
+              <li><span class="service-check">&#10003;</span> Elimination of messy inline styles and hacks</li>
+              <li><span class="service-check">&#10003;</span> Separation of presentation into external stylesheets</li>
+              <li><span class="service-check">&#10003;</span> Page weight reduction and asset optimization</li>
+              <li><span class="service-check">&#10003;</span> Preserving existing content and URL structures</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-sm">Refactor Site</a>
+          </article>
+
+          <!-- Service 4: Accessibility (a11y) Auditing -->
+          <article class="card service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #e0f2fe, #bae6fd); color: #0369a1;" aria-hidden="true">&#128065;</div>
+            <h3>Accessibility Auditing (WCAG)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Reviewing web interfaces to ensure they meet modern WCAG 2.1 AA accessibility guidelines for all users.
+            </p>
+            <ul class="service-checklist">
+              <li><span class="service-check">&#10003;</span> Color contrast ratio verification</li>
+              <li><span class="service-check">&#10003;</span> Keyboard navigation and visible focus rings</li>
+              <li><span class="service-check">&#10003;</span> Screen reader testing and meaningful alt text</li>
+              <li><span class="service-check">&#10003;</span> Detailed remediation report with code fixes</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-sm">Audit Accessibility</a>
+          </article>
+
+          <!-- Service 5: Cross-Browser Compatibility -->
+          <article class="card service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #fce7f3, #fbcfe8); color: #be185d;" aria-hidden="true">&#127760;</div>
+            <h3>Cross-Browser Consistency</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Ensuring pixel-perfect rendering across modern engines (Chrome, Firefox, Safari, Edge) and platforms.
+            </p>
+            <ul class="service-checklist">
+              <li><span class="service-check">&#10003;</span> Vendor prefixing and CSS fallbacks</li>
+              <li><span class="service-check">&#10003;</span> Form control normalization across operating systems</li>
+              <li><span class="service-check">&#10003;</span> High-DPI and Retina display vector asset scaling</li>
+              <li><span class="service-check">&#10003;</span> Verification on real physical mobile devices</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-sm">Check Compatibility</a>
+          </article>
+
+          <!-- Service 6: Student Peer Tutoring & Code Review -->
+          <article class="card service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #f3e8ff, #e9d5ff); color: #7e22ce;" aria-hidden="true">&#128101;</div>
+            <h3>Academic Code Review &amp; Pairing</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Assisting fellow Computer Science students in grasping CSS layout engines, Git commands, and web assignments.
+            </p>
+            <ul class="service-checklist">
+              <li><span class="service-check">&#10003;</span> Line-by-line code explanation for teachers</li>
+              <li><span class="service-check">&#10003;</span> CSS Grid vs Flexbox debugging sessions</li>
+              <li><span class="service-check">&#10003;</span> Git version control workflow walk-throughs</li>
+              <li><span class="service-check">&#10003;</span> Architecture documentation writing tips</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-sm">Book Study Session</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT WORKFLOW SECTION -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-amber">Methodology</span>
+          <h2>My 4-Step Engineering Process</h2>
+          <p>Every website I construct follows an organized, repeatable software engineering pipeline.</p>
+        </header>
+
+        <div class="grid grid-4">
+          <!-- Step 1 -->
+          <div class="card workflow-step">
+            <div class="step-number">1</div>
+            <h4>Content Planning</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Identifying user personas, drafting realistic textual content, and planning the complete URL and navigation hierarchy.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="card workflow-step">
+            <div class="step-number">2</div>
+            <h4>Semantic Wireframing</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Writing pure HTML5 markup first, ensuring document outlines, headings, and semantic accessibility roles are solid.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="card workflow-step">
+            <div class="step-number">3</div>
+            <h4>Responsive CSS Styling</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Implementing CSS variables, typography, Grid/Flexbox layouts, hover transitions, and mobile media queries.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="card workflow-step">
+            <div class="step-number">4</div>
+            <h4>Validation &amp; Audit</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Testing on multiple viewport sizes, validating through W3C tools, and checking keyboard navigation focus.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="gallery.html" class="btn btn-primary">Browse Visual Design Gallery &rarr;</a>
+          <a href="contact.html" class="btn btn-outline" style="margin-left: 0.75rem;">Get in Touch Today</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon" aria-hidden="true">S</div>
+            <span class="brand-name">Syed Sarim</span>
+          </div>
+          <p>
+            Undergraduate Computer Science student dedicated to mastering front-end web engineering, accessibility, and modern responsive UI design.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/syedsarim" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">&#128187;</a>
+            <a href="https://linkedin.com/in/syedsarim" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">&#128108;</a>
+            <a href="mailto:syedsarimraza1@gmail.com" class="social-link" aria-label="Send Email">&#9993;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Main Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills &amp; Toolkit</a></li>
+            <li><a href="education.html">Education Timeline</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore More</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="blog.html">Developer Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Assignment Info</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.5rem;">
+            <strong>Course:</strong> Web Engineering (CS-312)<br>
+            <strong>Assignment:</strong> Assignment 1 - Multi-Page Portfolio<br>
+            <strong>Tech Stack:</strong> Pure HTML5 &amp; CSS3 Only<br>
+            <strong>Frameworks/JS:</strong> None (100% Native)
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">Contact Student</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Syed Muhammad Sarim. All rights reserved. Created for Web Engineering Assignment 1.
+        </div>
+        <div>
+          <a href="about.html">About</a> &bull;
+          <a href="faq.html">FAQ</a> &bull;
+          <a href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently Asked Questions about Syed Muhammad Sarim's portfolio, web engineering architecture, pure CSS techniques, and project offerings.">
+  <meta name="author" content="Syed Muhammad Sarim">
+  <title>Frequently Asked Questions (FAQ) | Syed Muhammad Sarim - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Syed Muhammad Sarim Home">
+        <div class="brand-icon" aria-hidden="true">S</div>
+        <div class="brand-title">
+          <span class="brand-name">Syed Sarim</span>
+          <span class="brand-sub">Frontend Developer &amp; Student</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- 10 Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">FAQ</span>
+      </nav>
+      <h1>Frequently Asked Questions</h1>
+      <p>Answers to common queries regarding the technical architecture, design decisions, and engineering principles of this website.</p>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-cyan">Architecture &amp; Design Q&amp;A</span>
+          <h2>Questions &amp; Technical Answers</h2>
+          <p>Everything you need to know about the construction, accessibility, and pure CSS features of this assignment.</p>
+        </header>
+
+        <div class="faq-container">
+          <!-- FAQ 1: Why HTML & CSS only? -->
+          <details class="faq-item" open>
+            <summary class="faq-summary">
+              Why is this entire portfolio website built using only HTML5 and CSS3 without JavaScript?
+            </summary>
+            <div class="faq-content">
+              <p>
+                This project was created for <strong>Web Engineering Assignment 1</strong>. The objective of this assignment is to master the foundational mechanics of the modern web platform: semantic markup structuring, document outline hierarchy, CSS Grid, CSS Flexbox, and responsive design systems.
+              </p>
+              <p>
+                By strictly omitting JavaScript and frameworks like React or Bootstrap, the codebase demonstrates that high-performance, aesthetically pleasing, and interactive user interfaces can be created purely with the native browser rendering engine.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 2: Responsive Design & Media Queries -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              How is responsive design achieved across mobile, tablet, and desktop viewports?
+            </summary>
+            <div class="faq-content">
+              <p>
+                Responsive design is achieved through a combination of fluid layout grids and targeted CSS3 media queries:
+              </p>
+              <ul>
+                <li><strong>CSS Grid Auto-Fit:</strong> Multi-column cards use <code>grid-template-columns: repeat(auto-fit, minmax(...))</code> which naturally wrap without requiring breakpoints.</li>
+                <li><strong>Breakpoints at 1024px &amp; 768px:</strong> As screen real estate narrows, 4-column grids collapse to 2 columns, and ultimately to a single comfortable vertical column on mobile screens.</li>
+                <li><strong>Relative Units:</strong> Spacing and typography rely on relative units (<code>rem</code>, <code>em</code>, <code>%</code>) ensuring text scales gracefully when users adjust their device font size settings.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FAQ 3: Pure CSS Hamburger Menu -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              How does the mobile navigation hamburger toggle work without any JavaScript?
+            </summary>
+            <div class="faq-content">
+              <p>
+                The mobile navigation uses a celebrated pure CSS technique known as the <strong>Checkbox Hack</strong>:
+              </p>
+              <ol>
+                <li>A standard HTML checkbox <code>&lt;input type="checkbox" id="nav-toggle" class="nav-toggle"&gt;</code> is placed at the top of the header and hidden with <code>display: none</code>.</li>
+                <li>A semantic <code>&lt;label for="nav-toggle"&gt;</code> containing three CSS span bars is displayed as the hamburger icon on mobile viewports.</li>
+                <li>When the user taps the label, the browser natively toggles the checkbox's state. In CSS, the selector <code>.nav-toggle:checked ~ .site-nav</code> targets the adjacent navigation drawer and sets <code>display: flex</code>, while animating the hamburger bars into an "X"!</li>
+              </ol>
+            </div>
+          </details>
+
+          <!-- FAQ 4: Pure CSS Modal Lightbox -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              How does the interactive image lightbox on the Gallery page function without JavaScript?
+            </summary>
+            <div class="faq-content">
+              <p>
+                The gallery modal operates using the CSS3 <strong><code>:target</code> pseudo-class</strong>:
+              </p>
+              <p>
+                Each gallery thumbnail links to an element ID (for example, <code>href="#preview-1"</code>). When clicked, the browser appends <code>#preview-1</code> to the URL. The CSS rule <code>.lightbox-modal:target { display: flex; }</code> immediately activates the full-screen overlay. Clicking the modal close button (which links back to <code>#gallery</code>) changes the URL hash, effortlessly dismissing the modal with zero scripts.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 5: CSS Organization & Sharing -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              How is the CSS organized across all 10 pages without duplicating code?
+            </summary>
+            <div class="faq-content">
+              <p>
+                All styles reside in a single external stylesheet: <code>css/style.css</code>. Every HTML document includes the same <code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code> tag in its <code>&lt;head&gt;</code>.
+              </p>
+              <p>
+                The stylesheet is architected using <strong>CSS Custom Properties (Variables)</strong> in the <code>:root</code> scope for brand colors, elevation shadows, typography, and border radii. Reusable utility classes (<code>.container</code>, <code>.grid-2</code>, <code>.grid-3</code>, <code>.btn</code>, <code>.card</code>) allow consistent layout generation across all 10 pages.
+              </p>
+            </div>
+          </details>
+
+          <!-- FAQ 6: Accessibility Standards -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              What accessibility and inclusive design considerations were incorporated?
+            </summary>
+            <div class="faq-content">
+              <p>
+                Accessibility was considered throughout the design and markup phases:
+              </p>
+              <ul>
+                <li><strong>WCAG 2.1 AA Contrast:</strong> The navy text on light backgrounds and white text on primary purple buttons exceed the minimum contrast ratio of 4.5:1.</li>
+                <li><strong>Keyboard Navigation:</strong> All interactive links and buttons feature visible focus indicators (<code>:focus-visible</code>) for keyboard-only users.</li>
+                <li><strong>Accessible Forms:</strong> Every input element in the contact form features an explicitly associated <code>&lt;label for="..."&gt;</code> tag.</li>
+                <li><strong>Screen Reader Landmarks:</strong> All pages utilize semantic landmark tags (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>) and descriptive <code>alt</code> attributes on all images.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FAQ 7: Local Image Resilience -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              Why are local SVG images used instead of third-party external image URLs?
+            </summary>
+            <div class="faq-content">
+              <p>
+                External image URLs frequently suffer from network latency, rate limits, or broken link 404 errors. By storing handcrafted vector SVG graphics locally in the <code>images/</code> folder:
+              </p>
+              <ul>
+                <li>The website functions completely offline without an active internet connection.</li>
+                <li>Vector graphics scale crisply to any screen resolution (from mobile phones to 4K displays) without pixelation.</li>
+                <li>The total download payload remains minuscule, enabling instantaneous page load speeds.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FAQ 8: Collaboration & Contact -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              How can I get in touch with you regarding academic collaborations or web engineering projects?
+            </summary>
+            <div class="faq-content">
+              <p>
+                You can reach out via the <a href="contact.html">Contact Page</a> by filling out the inquiry form, emailing me directly at <a href="mailto:syedsarimraza1@gmail.com">syedsarimraza1@gmail.com</a>, or connecting through my GitHub and LinkedIn profiles located in the website footer.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <!-- STILL HAVE QUESTIONS CTA BOX -->
+        <div class="card" style="margin-top: 3.5rem; text-align: center; background: linear-gradient(135deg, var(--color-purple-light), #f1f5f9); border-color: #c7d2fe; padding: 2.5rem 2rem;">
+          <h3 style="color: var(--color-purple-dark); margin-bottom: 0.5rem;">Still Have Questions?</h3>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 1.5rem auto;">
+            If you need further clarification on any aspect of this Web Engineering assignment, please send a message or explore my other pages.
+          </p>
+          <div>
+            <a href="contact.html" class="btn btn-primary">Go to Contact Form &rarr;</a>
+            <a href="index.html" class="btn btn-outline" style="margin-left: 0.75rem;">Return to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon" aria-hidden="true">S</div>
+            <span class="brand-name">Syed Sarim</span>
+          </div>
+          <p>
+            Undergraduate Computer Science student dedicated to mastering front-end web engineering, accessibility, and modern responsive UI design.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/syedsarim" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">&#128187;</a>
+            <a href="https://linkedin.com/in/syedsarim" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">&#128108;</a>
+            <a href="mailto:syedsarimraza1@gmail.com" class="social-link" aria-label="Send Email">&#9993;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Main Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills &amp; Toolkit</a></li>
+            <li><a href="education.html">Education Timeline</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore More</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="blog.html">Developer Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Assignment Info</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.5rem;">
+            <strong>Course:</strong> Web Engineering (CS-312)<br>
+            <strong>Assignment:</strong> Assignment 1 - Multi-Page Portfolio<br>
+            <strong>Tech Stack:</strong> Pure HTML5 &amp; CSS3 Only<br>
+            <strong>Frameworks/JS:</strong> None (100% Native)
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">Contact Student</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Syed Muhammad Sarim. All rights reserved. Created for Web Engineering Assignment 1.
+        </div>
+        <div>
+          <a href="about.html">About</a> &bull;
+          <a href="faq.html">FAQ</a> &bull;
+          <a href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

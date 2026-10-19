@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbd2ac" />
+      <stop offset="100%" stop-color="#e2b184" />
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="40" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="160" fill="#ffffff" opacity="0.06" />
+  <circle cx="200" cy="200" r="130" fill="#ffffff" opacity="0.08" />
+  
+  <!-- Floating decorative elements -->
+  <g fill="#38bdf8" opacity="0.8">
+    <text x="45" y="90" font-family="monospace" font-size="20" font-weight="bold">&lt;dev&gt;</text>
+    <text x="295" y="320" font-family="monospace" font-size="20" font-weight="bold">&lt;/code&gt;</text>
+    <circle cx="340" cy="90" r="6" fill="#a78bfa" />
+    <circle cx="70" cy="300" r="8" fill="#38bdf8" />
+    <rect x="310" y="160" width="14" height="14" rx="3" fill="#ec4899" transform="rotate(25 317 167)" />
+  </g>
+
+  <!-- Person -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders / Body -->
+    <path d="M110 370 C110 295, 145 270, 200 270 C255 270, 290 295, 290 370 Z" fill="url(#shirtGrad)" />
+    <!-- Collar / inner shirt -->
+    <polygon points="175,270 225,270 200,310" fill="#38bdf8" />
+    <polygon points="185,270 215,270 200,295" fill="#ffffff" />
+    
+    <!-- Neck -->
+    <rect x="182" y="220" width="36" height="60" rx="8" fill="url(#skinGrad)" />
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="180" rx="60" ry="72" fill="url(#skinGrad)" />
+    
+    <!-- Hair -->
+    <path d="M140 170 C138 120, 160 100, 200 100 C245 100, 264 125, 260 170 C250 140, 230 130, 200 130 C165 130, 148 145, 140 170 Z" fill="#18181b" />
+    <!-- Glasses -->
+    <rect x="156" y="165" width="36" height="24" rx="6" fill="none" stroke="#0f172a" stroke-width="4" />
+    <rect x="208" y="165" width="36" height="24" rx="6" fill="none" stroke="#0f172a" stroke-width="4" />
+    <line x1="192" y1="177" x2="208" y2="177" stroke="#0f172a" stroke-width="4" />
+    <line x1="145" y1="173" x2="156" y2="175" stroke="#0f172a" stroke-width="3" />
+    <line x1="244" y1="175" x2="255" y2="173" stroke="#0f172a" stroke-width="3" />
+    
+    <!-- Eyes -->
+    <circle cx="174" cy="177" r="4" fill="#0f172a" />
+    <circle cx="226" cy="177" r="4" fill="#0f172a" />
+    
+    <!-- Smile -->
+    <path d="M185 215 Q200 228 215 215" fill="none" stroke="#993b2a" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+</svg>

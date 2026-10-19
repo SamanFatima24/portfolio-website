@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Syed Muhammad Sarim - Academic coursework and personal frontend development projects created using HTML5 and CSS3.">
+  <meta name="author" content="Syed Muhammad Sarim">
+  <title>Projects Showcase | Syed Muhammad Sarim - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Syed Muhammad Sarim Home">
+        <div class="brand-icon" aria-hidden="true">S</div>
+        <div class="brand-title">
+          <span class="brand-name">Syed Sarim</span>
+          <span class="brand-sub">Frontend Developer &amp; Student</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox & Hamburger Label -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- 10 Navigation Links -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="education.html" class="nav-link">Education</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span aria-current="page">Projects</span>
+      </nav>
+      <h1>Selected Projects &amp; Lab Work</h1>
+      <p>A portfolio of responsive web applications, university assignments, and interface design systems.</p>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <header class="section-header">
+          <span class="badge badge-cyan">Portfolio Archive</span>
+          <h2>Coursework &amp; Independent Systems</h2>
+          <p>Each project demonstrates clean semantic HTML5 markup, responsive CSS3 architectures, and accessible user interfaces.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <!-- Project 1: EcoTrack Dashboard -->
+          <article id="ecotrack" class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-1.svg" alt="EcoTrack Dashboard user interface preview" width="600" height="380">
+              <span class="badge badge-teal project-status">Coursework</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS Grid</span>
+                <span class="badge">Analytics</span>
+              </div>
+              <h3 class="project-title">EcoTrack Dashboard</h3>
+              <p class="project-desc">
+                An environmental sustainability dashboard tracking university building electricity consumption, water conservation goals, and recycling metrics.
+              </p>
+              <ul class="project-features">
+                <li>Responsive multi-card grid using CSS Grid repeat syntax</li>
+                <li>Pure CSS progress dials and statistics comparison widgets</li>
+                <li>Color-coded status indicators with accessible contrast ratios</li>
+              </ul>
+              <div class="project-actions">
+                <a href="gallery.html#preview-1" class="btn btn-primary btn-sm">Gallery Preview</a>
+                <a href="services.html" class="btn btn-outline btn-sm">Services</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Campus Hub Student Portal -->
+          <article id="campushub" class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-2.svg" alt="Campus Hub Portal user interface preview" width="600" height="380">
+              <span class="badge badge-cyan project-status">Academic</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">Semantic HTML</span>
+                <span class="badge">Flexbox</span>
+                <span class="badge">Campus Life</span>
+              </div>
+              <h3 class="project-title">Campus Hub Portal</h3>
+              <p class="project-desc">
+                A centralized directory for university clubs, societies, guest speaker seminars, and campus sports schedules with intuitive category filtering.
+              </p>
+              <ul class="project-features">
+                <li>Structured semantic time and event articles</li>
+                <li>Mobile-first responsive layout with collapsible drawer menus</li>
+                <li>Accessible focus outlines for keyboard navigation</li>
+              </ul>
+              <div class="project-actions">
+                <a href="gallery.html#preview-2" class="btn btn-primary btn-sm">Gallery Preview</a>
+                <a href="services.html" class="btn btn-outline btn-sm">Services</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AlgoScope Visualizer -->
+          <article id="algoscope" class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-3.svg" alt="AlgoScope Visualizer user interface preview" width="600" height="380">
+              <span class="badge badge-amber project-status">CS Theory</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">Data Structures</span>
+                <span class="badge">CSS Flexbox</span>
+                <span class="badge">Education</span>
+              </div>
+              <h3 class="project-title">AlgoScope Visualizer</h3>
+              <p class="project-desc">
+                An educational web interface explaining sorting algorithms (QuickSort, MergeSort) and binary search tree traversals through structured CSS bars.
+              </p>
+              <ul class="project-features">
+                <li>CSS-animated bar heights and color transitions</li>
+                <li>Side-by-side time complexity analysis tables</li>
+                <li>Designed as a teaching companion for freshman CS classes</li>
+              </ul>
+              <div class="project-actions">
+                <a href="gallery.html#preview-3" class="btn btn-primary btn-sm">Gallery Preview</a>
+                <a href="services.html" class="btn btn-outline btn-sm">Services</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Culinary Craft App -->
+          <article id="culinary" class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-4.svg" alt="Culinary Craft Recipe App preview" width="600" height="380">
+              <span class="badge project-status">Personal</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">HTML5 Layout</span>
+                <span class="badge">CSS Cards</span>
+                <span class="badge">Culinary UI</span>
+              </div>
+              <h3 class="project-title">Culinary Craft App</h3>
+              <p class="project-desc">
+                A clean recipe catalog and meal preparation planner featuring ingredient checklist cards, dietary tags, and step-by-step cooking timelines.
+              </p>
+              <ul class="project-features">
+                <li>Print-friendly CSS media stylesheet for kitchen recipe printouts</li>
+                <li>Nutritional metric breakdown tables and calorie cards</li>
+                <li>Structured microdata metadata for search engine indexing</li>
+              </ul>
+              <div class="project-actions">
+                <a href="gallery.html#preview-4" class="btn btn-primary btn-sm">Gallery Preview</a>
+                <a href="services.html" class="btn btn-outline btn-sm">Services</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: FocusFlow Study Timer -->
+          <article id="focusflow" class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-5.svg" alt="FocusFlow Study Timer user interface preview" width="600" height="380">
+              <span class="badge badge-teal project-status">Productivity</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">CSS Keyframes</span>
+                <span class="badge">Pomodoro</span>
+                <span class="badge">Study Tool</span>
+              </div>
+              <h3 class="project-title">FocusFlow Study Timer</h3>
+              <p class="project-desc">
+                A distraction-free web interface designed around the Pomodoro study technique to help engineering students balance deep-work intervals and breaks.
+              </p>
+              <ul class="project-features">
+                <li>Subtle pulsing ambient CSS animations during focus sessions</li>
+                <li>High-contrast dark-mode ready palette for late-night studying</li>
+                <li>Zero-distraction typography with large readable numerals</li>
+              </ul>
+              <div class="project-actions">
+                <a href="gallery.html#preview-5" class="btn btn-primary btn-sm">Gallery Preview</a>
+                <a href="services.html" class="btn btn-outline btn-sm">Services</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Atmosphere Live Weather -->
+          <article id="atmosphere" class="project-card">
+            <div class="project-thumb">
+              <img src="images/project-6.svg" alt="Atmosphere Live Weather interface preview" width="600" height="380">
+              <span class="badge badge-cyan project-status">Weather UI</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="badge">Vector Icons</span>
+                <span class="badge">Responsive Grid</span>
+                <span class="badge">Dashboard</span>
+              </div>
+              <h3 class="project-title">Atmosphere Live Radar</h3>
+              <p class="project-desc">
+                A meteorological weather summary dashboard showcasing multi-day temperature forecasts, wind velocity vectors, UV index indicators, and air quality cards.
+              </p>
+              <ul class="project-features">
+                <li>Dynamic CSS gradient atmospheric backgrounds</li>
+                <li>Responsive 7-day forecast cards adapting to mobile screens</li>
+                <li>Detailed humidity, pressure, and visibility metrics</li>
+              </ul>
+              <div class="project-actions">
+                <a href="gallery.html#preview-6" class="btn btn-primary btn-sm">Gallery Preview</a>
+                <a href="services.html" class="btn btn-outline btn-sm">Services</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Interested in having custom web layouts or HTML/CSS templates designed for your project?
+          </p>
+          <a href="services.html" class="btn btn-primary">Explore Web Services &rarr;</a>
+          <a href="contact.html" class="btn btn-outline" style="margin-left: 0.75rem;">Discuss Collaboration</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon" aria-hidden="true">S</div>
+            <span class="brand-name">Syed Sarim</span>
+          </div>
+          <p>
+            Undergraduate Computer Science student dedicated to mastering front-end web engineering, accessibility, and modern responsive UI design.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/syedsarim" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">&#128187;</a>
+            <a href="https://linkedin.com/in/syedsarim" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">&#128108;</a>
+            <a href="mailto:syedsarimraza1@gmail.com" class="social-link" aria-label="Send Email">&#9993;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Main Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills &amp; Toolkit</a></li>
+            <li><a href="education.html">Education Timeline</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore More</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="blog.html">Developer Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Assignment Info</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 0.5rem;">
+            <strong>Course:</strong> Web Engineering (CS-312)<br>
+            <strong>Assignment:</strong> Assignment 1 - Multi-Page Portfolio<br>
+            <strong>Tech Stack:</strong> Pure HTML5 &amp; CSS3 Only<br>
+            <strong>Frameworks/JS:</strong> None (100% Native)
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 0.5rem;">Contact Student</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Syed Muhammad Sarim. All rights reserved. Created for Web Engineering Assignment 1.
+        </div>
+        <div>
+          <a href="about.html">About</a> &bull;
+          <a href="faq.html">FAQ</a> &bull;
+          <a href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
