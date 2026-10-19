@@ -2,7 +2,7 @@
 
 **Course:** Web Engineering (CS-312)  
 **Project Title:** Personal Portfolio Website (Assignment 1)  
-**Author:** Syed Muhammad Sarim  
+**Author:** Saman Fatima  
 **Technology Restrictions Complied:** 100% Pure HTML5 and CSS3 (Zero JavaScript, Zero Frameworks)
 
 ---

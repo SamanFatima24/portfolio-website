@@ -8,10 +8,9 @@ A modern, responsive, professional student portfolio website engineered using **
 
 - **Project Title:** Personal Portfolio Website
 - **Course:** Web Engineering (CS-312)
-- **Author:** Syed Muhammad Sarim
+- **Author:** Saman Fatima
 - **Technology Stack:** Pure HTML5 &amp; CSS3
-- **Repository URL:** [https://github.com/syedsarim/web-engineering-assignment-1](https://github.com/syedsarim/web-engineering-assignment-1)
-- **Live Website URL:** [https://syedsarim.github.io/web-engineering-assignment-1/](https://syedsarim.github.io/web-engineering-assignment-1/)
+- **Repository URL:** [https://github.com/SamanFatima24/portfolio-website](https://github.com/SamanFatima24/portfolio-website)
 
 ---
 
